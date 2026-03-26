@@ -17,24 +17,33 @@ It adds:
 
 ## Installation
 
-Copy the plugin file into your OpenCode plugins directory:
+### From npm in `opencode.json`
+
+After publishing, add the package name to your OpenCode config:
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["opencode-cmux-notify-plugin"]
+}
+```
+
+OpenCode installs npm plugins automatically using Bun at startup.
+
+### From a local file
+
+If you want to install it without npm, copy the plugin file into your OpenCode plugins directory:
 
 ```bash
 mkdir -p ~/.config/opencode/plugins
 cp opencode-cmux-notify.js ~/.config/opencode/plugins/
 ```
 
-If you prefer, you can also reference the file directly from this repository path once cloned locally.
+OpenCode will load local plugins from that directory automatically.
 
 ## Usage
 
-Add the plugin to your OpenCode setup by placing the file in:
-
-```text
-~/.config/opencode/plugins/opencode-cmux-notify.js
-```
-
-OpenCode will load local plugins from that directory automatically.
+Once loaded, the plugin automatically reacts to OpenCode session events. No additional registration step is required.
 
 ## What it does
 
@@ -62,6 +71,12 @@ OpenCode will load local plugins from that directory automatically.
 ## Development
 
 This plugin is intentionally build-free and ESM-only. The repo keeps a single runtime file so installation stays simple.
+
+## Publish notes
+
+- npm package name: `opencode-cmux-notify-plugin`
+- OpenCode config entry: `"plugin": ["opencode-cmux-notify-plugin"]`
+- Requires `cmux` to be installed and available on `PATH`
 
 ## License
 

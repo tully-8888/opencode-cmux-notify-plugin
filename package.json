@@ -2,6 +2,11 @@
   "name": "opencode-cmux-notify-plugin",
   "version": "0.1.0",
   "description": "OpenCode plugin that sends cmux notifications and live status updates for questions, permissions, retries, errors, and active subagents.",
+  "files": [
+    "opencode-cmux-notify.js",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "main": "./opencode-cmux-notify.js",
   "exports": "./opencode-cmux-notify.js",
@@ -20,5 +25,8 @@
     "cmux",
     "notifications",
     "status"
-  ]
+  ],
+  "scripts": {
+    "build": "node --check ./opencode-cmux-notify.js"
+  }
 }
