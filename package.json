@@ -1,0 +1,24 @@
+{
+  "name": "opencode-cmux-notify-plugin",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that sends cmux notifications and live status updates for questions, permissions, retries, errors, and active subagents.",
+  "type": "module",
+  "main": "./opencode-cmux-notify.js",
+  "exports": "./opencode-cmux-notify.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tully-8888/opencode-cmux-notify-plugin.git"
+  },
+  "homepage": "https://github.com/tully-8888/opencode-cmux-notify-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/tully-8888/opencode-cmux-notify-plugin/issues"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "cmux",
+    "notifications",
+    "status"
+  ]
+}
