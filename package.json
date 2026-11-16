@@ -11,6 +11,9 @@
   "main": "./opencode-cmux-notify.js",
   "exports": "./opencode-cmux-notify.js",
   "license": "MIT",
+  "dependencies": {
+    "@opencode/plugin": "^2"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tully-8888/opencode-cmux-notify-plugin.git"
